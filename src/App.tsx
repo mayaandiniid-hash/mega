@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
 import { AuthProvider, useAuth } from './lib/authContext';
 import { LoginPage } from './components/auth/LoginPage';
 import { AurelOnboarding } from './components/onboarding/AurelOnboarding';
@@ -189,5 +191,14 @@ export const App: React.FC = () => {
     </AuthProvider>
   );
 };
+
+const rootElement = typeof document !== 'undefined' ? document.getElementById('root') : null;
+if (rootElement && !rootElement.hasChildNodes()) {
+  ReactDOM.createRoot(rootElement).render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+}
 
 export default App;
