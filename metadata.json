@@ -1,0 +1,6 @@
+{
+  "name": "AURELIA EDU - Platform Edukasi Terpersonalisasi",
+  "description": "Platform edukasi Indonesia terpersonalisasi dari SD hingga Perguruan Tinggi dengan karakter Aurel, kuis interaktif 5 nyawa, sistem poin & reward 3D, serta analitik komprehensif.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
